@@ -24,40 +24,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Row(                                    
-                modifier = Modifier
-                    .background(Color.Gray)
-                    .fillMaxWidth().fillMaxHeight(0.5f)
-            ) {
-                Column(
-                    modifier = Modifier
-                        .background(Color.Red).fillMaxWidth(0.5f).fillMaxHeight(),
-                    verticalArrangement = Arrangement.SpaceAround,
-                    horizontalAlignment = Alignment.CenterHorizontally
-                )
-                { //Ин контейнер мебошад ва барои мавқъи виджетро муайян кардан истифода мешавад
-                    Text(text = "Hello")
-                    Text(text = "Girona")
-                    Text(text = "Madrid")
-                }
-                Column(
-                    modifier = Modifier
-                        .background(Color.Green).fillMaxSize(),
-                    verticalArrangement = Arrangement.SpaceAround,
-                    horizontalAlignment = Alignment.CenterHorizontally
-                )
-                { //Ин контейнер мебошад ва барои мавқъи виджетро муайян кардан истифода мешавад
-                    Text(text = "Hello")
-                    Text(text = "Girona")
-                    Text(text = "Madrid")
-                }
-            }
+           NewText()
         }
     }
 }
 
-//@Preview (showBackground = true) //Ин функксия барои нишон додани виджет истифода мешавад
-//@Composable //Барои ҷеғ задани функсия истифода карда мешавад
-//fun NewText(){
-//    Text(text = "Hello World!")
-//}
+@Preview (showBackground = true) //Ин функксия барои нишон додани виджет истифода мешавад
+@Composable //Барои ҷеғ задани функсия истифода карда мешавад
+fun NewText(){
+    Text(text = "Hello World!")
+}
