@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Row(                                    
+            Row(
                 modifier = Modifier
                     .background(Color.Gray)
                     .fillMaxWidth().fillMaxHeight(0.5f)
@@ -51,8 +51,7 @@ class MainActivity : ComponentActivity() {
                     Text(text = "Girona")
                     Text(text = "Madrid")
                 }
-            }
-        }
+            }        }
     }
 }
 
